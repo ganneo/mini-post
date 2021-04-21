@@ -1,0 +1,25 @@
+.Modal {
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  width: 50vw;
+  height: 50vh;
+  transform: scale(0);
+  box-sizing: border-box;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+
+.Modal.Show {
+  transform: scale(1);
+}
+
+.CloseBtn {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}

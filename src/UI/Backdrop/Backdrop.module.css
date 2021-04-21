@@ -1,0 +1,18 @@
+.Backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(0);
+  z-index: 50;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+}
+
+.Backdrop.Active {
+  transform: scale(1);
+  opacity: 1;
+}
